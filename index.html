@@ -2,12 +2,85 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/src/assets/white_logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Cekrek Shop</title>
+    <link href="./src/output.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+    <div
+      class="flex h-full w-screen flex-col items-center justify-start bg-red-700"
+    >
+      <!-- Navbar -->
+      <nav
+        class="flex h-40 w-screen items-center justify-between bg-white px-20 py-10"
+      >
+        <div
+          class="flex h-auto w-auto flex-row items-center justify-center gap-5"
+        >
+          <img
+            src="/src/assets/black_logo.svg"
+            alt="ini logo"
+            class="h-full max-h-20 w-full max-w-20"
+          />
+          <p
+            class="h-auto w-36 text-wrap text-center text-2xl font-normal tracking-widest"
+          >
+            C E K R E K . S H O P
+          </p>
+        </div>
+        <div class="flex h-auto w-auto items-center justify-center gap-20">
+          <button class="h-auto w-auto bg-fuchsia-200 px-3 py-2">
+            <p class="text-2xl font-normal">Tentang Kami</p>
+          </button>
+          <button class="h-auto w-auto bg-fuchsia-200 px-3 py-2">
+            <p class="text-2xl font-normal">Portofolio</p>
+          </button>
+          <button class="h-auto w-auto bg-fuchsia-200 px-3 py-2">
+            <p class="text-2xl font-normal">Pesan Sekarang</p>
+          </button>
+        </div>
+      </nav>
+      <!-- Content -->
+      <section class="flex h-full w-screen flex-col p-20">
+        <!--  -->
+        <div
+          class="flex h-full w-full flex-row items-center justify-center gap-20"
+        >
+          <img src="src/img/2.jpg" alt="ini gambar 1" class="w-1/3 h-1/4 object-cover size-1/4" />
+          <div
+            class="flex h-full w-full flex-col items-center justify-center gap-12 bg-slate-100"
+          >
+            <p class="text-2xl font-normal text-center">Jepret momen terindah bersama</p>
+            <h1 class="text-8xl font-bold text-center">CEKREK</h1>
+            <p class="text-2xl font-normal text-center">
+              Karena setiap momen itu berharga dan layak diabadikan
+            </p>
+          </div>
+        </div>
+
+        <!--  -->
+        <div class="">
+
+        </div>
+        <p>paket fotografi</p>
+        <!-- foto Paket harga -->
+        <div></div>
+        <!-- paket custom -->
+        <div></div>
+        <!-- portofolio-->
+        <div></div>
+        <!-- Testimoni -->
+        <div></div>
+        <!-- CTA -->
+        <div></div>
+      </section>
+      <!-- Footer -->
+    </div>
   </body>
 </html>
