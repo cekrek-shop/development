@@ -23,8 +23,8 @@
 <body>
   <div class="flex h-full w-full flex-col items-center justify-start plus-jakarta-sans-400 gap-10">
     <!-- Navbar -->
-    <nav class="flex h-32 w-full items-center justify-between bg-white px-20 py-10">
-      <div class="flex h-auto w-auto flex-row items-center justify-center gap-5">
+    <nav class="flex h-auto w-full items-center justify-between bg-white px-10 lg:px-20 py-10">
+      <div class="flex h-auto w-auto flex-col lg:flex-row items-center justify-center gap-5">
         <img src="/src/assets/black_logo.svg" alt="ini logo" class="h-full max-h-20 w-full max-w-20" />
         <p class="h-auto w-36 text-wrap text-center text-2xl font-normal tracking-widest">
           C E K R E K . S H O P
@@ -43,13 +43,13 @@
       </div>
     </nav>
     <!-- Content -->
-    <section class="flex h-full w-full flex-col px-20">
+    <section class="flex h-full w-full flex-col px-10 lg:px-20">
       <!--  -->
-      <div class="flex h-full w-full flex-row items-center justify-center py-10">
-        <div class="h-full w-3/5 flex items-center justify-center">
+      <div class="flex h-full w-full flex-col-reverse gap-10 lg:gap-0 lg:flex-row items-center justify-center py-10">
+        <div class="h-full w-auto flex items-center justify-center">
           <div class="h-[32rem] aspect-[4/3] bg-blue-100 py-10"></div>
         </div>
-        <div class="h-full w-2/5 flex flex-col gap-10 px-20">
+        <div class="h-full w-auto flex flex-col gap-10 px-10 lg:px-20">
           <p class="text-2xl font-normal text-center">Jepret momen terindah bersama</p>
           <h1 class="text-8xl font-bold text-center uppercase">cekrek</h1>
           <p class="text-2xl font-normal text-center">
@@ -59,27 +59,27 @@
       </div>
 
       <!--  -->
-      <div class="flex h-full w-full flex-row items-center justify-center py-10">
+      <div class="flex h-full w-full flex-col gap-10 lg:gap-0 lg:flex-row items-center justify-center py-10">
 
-        <div class="h-full w-2/5 flex flex-col gap-10 px-20">
+        <div class="h-full w-auto flex flex-col gap-10 px-10 lg:px-20">
           <p class="text-2xl font-normal text-center">Bersama kami ciptakan koleksi memukau, momen terindah, dan hasil
             yang menakjubkan.</p>
           <p class="text-2xl font-normal text-center">Hubungi kami untuk abadikan momen anda!</p>
         </div>
-        <div class="h-full w-3/5 flex items-center justify-center">
+        <div class="h-full w-auto flex items-center justify-center">
           <div class="h-[32rem] aspect-[4/3] bg-blue-100 py-10"></div>
         </div>
       </div>
     </section>
-    <section class="flex h-full w-full flex-col px-20 gap-10">
+    <section class="flex h-full w-full flex-col px-10 lg:px-20 gap-10">
       <div class="w-full h-24 flex items-center justify-center">
         <p class="text-4xl uppercase font-bold">paket fotografi</p>
       </div>
       <!-- foto Paket harga -->
-      <div class="w-full flex items-center justify-between">
-        <div class="w-1/4 aspect-[3/4] bg-blue-400"></div>
-        <div class="w-1/4 aspect-[3/4] bg-blue-400"></div>
-        <div class="w-1/4 aspect-[3/4] bg-blue-400"></div>
+      <div class="w-full flex flex-col gap-10 lg:flex-row lg:gap-0 justify-between items-center">
+        <div class="w-3/4 lg:w-1/4 aspect-[3/4] bg-blue-400"></div>
+        <div class="w-3/4 lg:w-1/4 aspect-[3/4] bg-blue-400"></div>
+        <div class="w-3/4 lg:w-1/4 aspect-[3/4] bg-blue-400"></div>
       </div>
       <!-- paket custom -->
       <div class="w-full h-24 flex items-center justify-center bg-purple-800 bg-opacity-50">
@@ -87,18 +87,18 @@
       </div>
 
     </section>
-    <section class="flex h-full w-full flex-col px-20 gap-10">
+    <section class="flex h-full w-full flex-col px-10 lg:px-20 gap-10">
       <div class="w-full h-64 flex items-center justify-center bg-purple-800 bg-opacity-50">
         <p class="text-2xl">Portfolio</p>
       </div>
       <div></div>
     </section>
-    <section class="flex h-full w-full flex-col px-20 gap-10">
+    <section class="flex h-full w-full flex-col px-10 lg:px-20 gap-10">
       <!-- Testimoni -->
-      <div class="w-full flex items-center justify-between">
-        <div class="w-1/4 aspect-[3/4] bg-blue-400"></div>
-        <div class="w-1/4 aspect-[3/4] bg-blue-400"></div>
-        <div class="w-1/4 aspect-[3/4] bg-blue-400"></div>
+      <div class="w-full flex flex-col gap-10 lg:flex-row lg:gap-0 justify-between items-center">
+        <div class="w-3/4 lg:w-1/4 aspect-[3/4] bg-blue-400"></div>
+        <div class="w-3/4 lg:w-1/4 aspect-[3/4] bg-blue-400"></div>
+        <div class="w-3/4 lg:w-1/4 aspect-[3/4] bg-blue-400"></div>
       </div>
     </section>
     <section class="flex h-full w-full flex-col items-center justify-center p-20 gap-10">
@@ -109,23 +109,47 @@
       <a href="/" class="uppercase p-10 bg-purple-500 text-4xl font-bold">cekrek sekarang!</a>
     </section>
     <!-- Footer -->
-    <footer class="h-96 w-full bg-purple-900 flex px-20">
-      <div class="bg-blue-300 w-4/5 h-full flex">
-        <div class="flex h-auto w-auto flex-col items-center justify-center gap-5">
+    <footer class="h-auto w-full bg-purple-900 flex flex-col lg:flex-row px-10 lg:px-20 text-xl text-white py-8">
+      <div class="w-full lg:w-4/5 h-full flex">
+        <div class="w-1/3 flex h-auto flex-col items-center justify-center gap-5">
           <img src="/src/assets/black_logo.svg" alt="ini logo" class="h-full max-h-20 w-full max-w-20" />
           <p class="h-auto w-36 text-wrap text-center text-2xl font-normal tracking-widest">
             C E K R E K . S H O P
           </p>
         </div>
+        <div class="w-1/3 flex-col">
+          <div class="flex items-center p-3">
+            <img src="https://www.svgrepo.com/show/452133/whatsapp.svg" alt="logo-wangsaff" class="h-8 aspect-square pr-2">
+            <p>081123456789</p>
+          </div>
+          <div class="flex items-start p-3">
+            <img src="https://www.svgrepo.com/show/530614/map.svg" alt="logo-wangsaff" class="h-8 aspect-square pr-2">
+            <p>Jl. Ring Road Utara, Ngringin, Condongcatur, Kec. Depok, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55281</p>
+          </div>
+        </div>
+        <div class="w-1/3 flex-col gap-4">
+          <p class="px-3 pt-3 pb-6">Follow Us</p>
+          <div class="flex items-center p-3">
+            <img src="https://www.svgrepo.com/show/452229/instagram-1.svg" alt="logo-wangsaff" class="h-8 aspect-square pr-2">
+            <p>Instagram</p>
+          </div>
+          <div class="flex items-center p-3">
+            <img src="https://www.svgrepo.com/show/475647/facebook-color.svg" alt="logo-wangsaff" class="h-8 aspect-square pr-2">
+            <p>Facebook</p>
+          </div>
+          <div class="flex items-center p-3">
+            <img src="https://www.svgrepo.com/show/452114/tiktok.svg" alt="logo-wangsaff" class="h-8 aspect-square pr-2">
+            <p>Tiktok</p>
+          </div>
+        </div>
       </div>
-      <div class="w-1/5 h-full flex-col gap-10 p-4">
-        <p class="text-2xl font-normal text-left text-white pt-10 pb-4">Kunjungi kami</p>
+      <div class="w-full lg:w-1/5 h-full flex-col pt-3 gap-10">
+        <p class="font-normal text-left pb-4">Kunjungi kami</p>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.0809289654399!2d110.40828153340705!3d-7.758519677736787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a599bfbfddfe3%3A0x7cd2620c2ae8344f!2sSoto%20Lamongan%20%26%20Nasi%20Goreng%20Cak%20YU!5e0!3m2!1sen!2sid!4v1717675844910!5m2!1sen!2sid"
-          width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+          class="w-full aspect-video border-0" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
-
     </footer>
   </div>
 </body>
